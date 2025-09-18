@@ -75,21 +75,29 @@ You will need Node.js and npm installed on your machine.
 
 ### Installation
 
-    Clone the repository:
+Clone the repository:
 
-`    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)`
+```
+    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+```
 
-    Navigate to the project directory:
+Navigate to the project directory:
 
-`    cd your-repository-name`
+```
+    cd your-repository-name
+```
 
-    Install the dependencies:
+Install the dependencies:
 
-`    npm install`
+```
+    npm install
+```
 
-    Start the development server:
+Start the development server:
 
-`    npm start`
+```
+    npm start
+```
 
 ### Project structure
 
