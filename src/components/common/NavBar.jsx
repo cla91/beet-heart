@@ -1,4 +1,4 @@
-import styles from "./Navbar.module.scss";
+import styles from "./NavBar.module.scss";
 
 import RecipesLink from "../ui/RecipesLink";
 
