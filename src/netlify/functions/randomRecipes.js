@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const handler = async () => {
-  const apiKey = process.env.REACT_APP_SPOONACULAR_API_KEY;
+  const apiKey = process.env.SPOONACULAR_API_KEY;
   if (!apiKey) {
     return {
       statusCode: 500,
