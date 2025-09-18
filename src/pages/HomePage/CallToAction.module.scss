@@ -1,0 +1,52 @@
+@use "./../../styles/mixin";
+
+.callToAction {
+  @include mixin.container;
+  padding-block-start: 6.4rem;
+}
+.callToAction__container {
+  padding-inline: 1.6rem;
+  padding-block: 4.8rem;
+  background-color: hsl(var(--color-neutral-200));
+  border-radius: 1.6rem;
+  text-align: center;
+  display: grid;
+  gap: 3.2rem;
+  justify-items: center;
+  background: url("./../../assets/images/leaf-1.svg"),
+    url("./../../assets/images/plant-5.svg"), hsl(var(--color-neutral-200));
+  background-repeat: no-repeat;
+  background-position: bottom 1rem left 0.5rem, top 1rem right 1rem;
+  background-size: 25%, 25%;
+  @include mixin.screen-md {
+    padding-inline: 0;
+    padding-block: 8rem;
+    gap: 4rem;
+  }
+  @include mixin.screen-md {
+    padding-block: 9.6rem;
+  }
+}
+.callToAction__details {
+  display: grid;
+  gap: 1.2rem;
+}
+.ctaBtn {
+  @include mixin.text-preset-8;
+  color: hsl(var(--color-neutral-000));
+  border-radius: 3.2rem;
+  display: grid;
+  place-content: center;
+  width: fit-content;
+  background-color: hsl(var(--color-neutral-900));
+  padding-inline: 2.4rem;
+  padding-block: 1.6rem;
+  transition: background-color 0.1s ease-in-out;
+  &:hover {
+    background-color: hsl(var(--color-neutral-800));
+  }
+  &:focus {
+    outline: 0.2rem solid hsl(var(--color-neutral-900));
+    outline-offset: 0.2rem;
+  }
+}

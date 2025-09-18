@@ -1,0 +1,21 @@
+@use "./../../styles/mixin";
+
+.featuredRecipes {
+  margin-block-start: -0.1rem;
+  padding-block-start: 6.4rem;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  border-radius: 4rem;
+  background-color: hsl(var(--color-neutral-100));
+  @include mixin.screen-md {
+    background-color: transparent;
+  }
+}
+.featuredRecipes__content {
+  @include mixin.container;
+  display: grid;
+  gap: 3.2rem;
+}
+.featuredRecipes__title {
+  text-align: center;
+}

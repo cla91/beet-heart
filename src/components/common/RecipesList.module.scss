@@ -1,0 +1,9 @@
+.recipesList {
+  display: grid;
+  gap: 3.2rem;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+}
+.error {
+  text-align: center;
+}

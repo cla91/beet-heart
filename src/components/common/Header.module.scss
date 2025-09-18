@@ -1,0 +1,14 @@
+@use "./../../styles/mixin";
+.header {
+  border-bottom: 0.1rem solid hsl(var(--color-neutral-300));
+}
+.header__content {
+  @include mixin.container;
+  padding-block: 1.6rem;
+  display: grid;
+
+  align-items: center;
+  @include mixin.screen-md {
+    padding-block: 2rem;
+  }
+}

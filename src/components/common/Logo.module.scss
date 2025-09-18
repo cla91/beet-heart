@@ -1,0 +1,31 @@
+@use "./../../styles/mixin";
+
+.logo {
+  @include mixin.text-preset-7;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: fit-content;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  justify-self: start;
+  @include mixin.screen-md {
+    @include mixin.text-preset-4;
+    justify-self: center;
+  }
+}
+.logo__img {
+  width: auto;
+  max-height: 4rem;
+  @include mixin.screen-md {
+    max-height: 5rem;
+  }
+}
+.colorRed {
+  color: hsl(358, 49%, 39%);
+  order: -1;
+}
+.colorGreen {
+  color: hsl(133, 24%, 23%);
+}

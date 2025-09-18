@@ -1,0 +1,34 @@
+@use "./../../styles/mixin";
+
+.nav {
+  color: hsl(var(--color-neutral-900));
+  grid-row-start: 1;
+  grid-column-start: 1;
+  justify-self: end;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 2rem;
+  }
+}
+.ctaBtn {
+  @include mixin.text-preset-8;
+  background-color: hsl(358, 49%, 39%);
+  color: hsl(var(--color-neutral-000));
+  border-radius: 3.2rem;
+  padding-inline: 1.6rem;
+  padding-block: 1.2rem;
+  display: grid;
+  place-content: center;
+  width: fit-content;
+  transition: background-color 0.1s ease-in-out;
+  &:hover {
+    background-color: hsl(358, 49%, 60%);
+  }
+  &:focus {
+    outline: 0.2rem solid hsl(358, 49%, 39%);
+    outline-offset: 0.2rem;
+  }
+}

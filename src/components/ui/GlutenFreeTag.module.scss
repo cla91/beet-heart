@@ -1,0 +1,14 @@
+@use "./../../styles/mixin";
+
+.tag {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: hsl(var(--color-accent-dark));
+  border: 0.1rem solid hsl(var(--color-accent-dark));
+  background-color: hsl(var(--color-accent-light));
+  border-radius: 3.2rem;
+  padding: 0.4rem 0.8rem;
+  width: min-content;
+  text-wrap: nowrap;
+}

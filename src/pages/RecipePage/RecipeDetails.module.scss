@@ -1,0 +1,65 @@
+@use "./../../styles/mixin";
+
+.recipe {
+  display: grid;
+  gap: 4rem;
+  padding-block-end: 4.8rem;
+  @include mixin.screen-lg {
+    grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), auto));
+  }
+}
+.recipe__image {
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.recipe__content {
+  display: grid;
+  gap: 2rem;
+}
+.recipe__title {
+  @include mixin.text-preset-2-mobile;
+  max-width: none;
+
+  @include mixin.screen-lg {
+    @include mixin.text-preset-2;
+  }
+}
+.recipe__source {
+  @include mixin.text-preset-9;
+  display: flex;
+  gap: 0.6rem;
+  a {
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+}
+.recipe__info {
+  @include mixin.text-preset-7;
+  display: flex;
+  gap: 1.6rem;
+}
+.recipe__content h2 {
+  @include mixin.text-preset-4;
+  margin-block-end: 1.6rem;
+}
+.recipe__content {
+  ul {
+    list-style: disc inside;
+  }
+  ol {
+    list-style: decimal inside;
+  }
+  ul,
+  ol {
+    display: grid;
+    gap: 0.8rem;
+  }
+}
+.error {
+  padding-block: 4.8rem;
+  display: grid;
+  gap: 1.6rem;
+}

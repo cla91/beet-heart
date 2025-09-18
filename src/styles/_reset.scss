@@ -1,0 +1,72 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+svg {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input {
+  font: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+}
+
+::placeholder {
+  opacity: 1;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+button,
+input:where([type="button"], [type="reset"], [type="submit"]) {
+  appearance: button;
+}

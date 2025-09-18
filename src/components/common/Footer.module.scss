@@ -1,0 +1,15 @@
+@use "./../../styles/mixin";
+
+.footer {
+  @include mixin.container;
+  @include mixin.text-preset-9;
+  padding-block-start: 3.2rem;
+  padding-block-end: 2rem;
+  text-align: center;
+  a {
+    text-decoration: underline;
+  }
+  @include mixin.screen-md {
+    padding-block: 4rem;
+  }
+}

@@ -1,0 +1,9 @@
+@use "./../../styles/mixin";
+
+.span {
+  color: hsl(var(--color-neutral-900));
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.6rem;
+}

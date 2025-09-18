@@ -1,0 +1,12 @@
+@use "./../../styles/mixin";
+
+.nav {
+  @include mixin.text-preset-7;
+  opacity: 0.6;
+  margin-block-end: 1.6rem;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+}
