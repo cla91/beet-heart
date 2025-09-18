@@ -99,12 +99,11 @@ You will need Node.js and npm installed on your machine.
     npm start
 ```
 
-The application will be available at http://localhost:3000.
-
 ### Project structure
 
 The project follows a component-based architecture for better organization and reusability.
 
+```
 /src
 ├── components/ # Reusable UI components (e.g., Layout, Header, Footer)
 ├── pages/ # Top-level components for each route (e.g., HomePage, RecipesPage)
@@ -119,6 +118,7 @@ The project follows a component-based architecture for better organization and r
 
 /netlify
 └── functions/ # Serverless functions
+```
 
 ## Credits
 
