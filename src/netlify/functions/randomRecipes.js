@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const handler = async () => {
+export async function handler() {
   const apiKey = process.env.SPOONACULAR_API_KEY;
   if (!apiKey) {
     return {
@@ -35,6 +35,4 @@ const handler = async () => {
       body: JSON.stringify({ error: message }),
     };
   }
-};
-
-export { handler };
+}
