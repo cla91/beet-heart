@@ -2,6 +2,8 @@
 
 Welcome to the BeetHeart project! This is a single-page application designed to help users easily discover and explore a variety of delicious vegetarian recipes. The website is built with a focus on simplicity, responsiveness, and an excellent user experience.
 
+Live site: [BeetHeart](https://beetheart.netlify.app)
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -30,6 +32,12 @@ Here's what the website should include:
 - Responsive design.
 
 ### Screenshot
+
+![](./Screenshot-home.png)
+![](./Screenshot-recipes.png)
+![](./Screenshot-recipe.png)
+![](./Screenshot-recipe-error.png)
+![](./Screenshot-error.png)
 
 ## My process
 
