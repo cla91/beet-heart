@@ -63,6 +63,7 @@ This project was built using a modern and robust stack to ensure a fast, scalabl
 - Context API: Manages global state, specifically the LastQueryContext, which persists the user's last search query across the application.
 - TanStack Query: A powerful library used for data fetching, caching, and state synchronization, significantly improving performance. Custom hooks (e.g. useSearchRecipes) are implemented to manage data fetching, with staleTime and gcTime set to Infinity to ensure cached data is not refetched unnecessarily.
 - Motion.dev: A simple and powerful animation library for React, used to create fluid and engaging UI transitions (e.g. in the search results).
+- Sass: for styling globally and in modules.
 
 **Backend & API Handling**
 
